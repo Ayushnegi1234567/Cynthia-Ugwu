@@ -1,0 +1,269 @@
+@font-face {
+  font-family: chacha;
+  src: url(/GeneralSans-Medium.ttf);
+}
+@font-face {
+  font-family: chachi;
+  src: url(./GeneralSans-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: chacha;
+  font-weight: 500;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+.point{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 999;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+
+
+
+.page1 {
+  
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+}
+.nav {
+  padding: 2.5vw;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.nav a {
+  color: white;
+  font-size: 1.25vw;
+  text-decoration: none;
+  font-weight: 100;
+  font-family: chacha;
+  height: 100px;
+  width: 100%;
+}
+.nav h2 {
+  font-size: 1vw;
+  font-family: chachi;
+}
+.box{
+    height: 180px;
+    width: 50px;
+    background-color: white;
+    color: black;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 200px;
+    right: 0;
+    font-family: chacha;
+    font-size: 1.2vw;
+   
+
+}
+.box h5{
+    rotate: 270deg;
+}
+.box h4{
+font-weight: 600;
+}
+
+.heading h1 {
+  font-size: 10.5vw;
+  font-family: chachi;
+  margin-left: 3vw;
+  text-transform: uppercase;
+  line-height: 9.5vw;
+  color: #a3a3a3;
+}
+.secondh1 {
+  width: fit-content;
+  margin-left: 10vw;
+}
+.secondh1 h5 {
+  text-align: right;
+  font-size: 1.1vw;
+  font-family: chacha;
+  font-weight: 500;
+  margin-top: 1vw;
+}
+.rightCornerHead {
+  margin-right: 5vw;
+  line-height: 2vw;
+  margin-top: 120px;
+}
+.rightCornerHead h5 {
+  text-align: right;
+  font-size: 1.1vw;
+  font-family: chacha;
+  font-weight: 550;
+}
+.footer {
+  margin: 0 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 1vw;
+  font-family: chacha;
+}
+.footer .arrow {
+ display: flex;
+ gap: 0.5vw;
+}
+.footer .arrow .circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: azure;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.page2{
+  padding:10vw 3vw;
+  min-height: 100vh;
+  width: 100%;
+  background-color:black;
+  color: #A3A3A3;
+  
+}
+.elem img{
+  opacity: 0;
+  pointer-events: none;
+  height: 140%;
+  z-index: 999;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.page2 .elem{
+  border-top: 1px solid rgb(255, 255, 255);
+  width: 90%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.page2 .elem h1{
+  font-size: 7.5vw;
+  font-family: chacha;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 3vw 0;
+  opacity: .7;
+}
+.page2 .elem h5{
+  font-size: 1.25vw;
+}
+
+
+.page3{
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+ 
+
+
+}
+.con{
+   padding-top: 1vw;
+  padding-left: 35vw;
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+}
+
+
+.page3 .gola{
+  height: 250px;
+  width: 250px;
+  background-color: white;
+  border-radius: 50%;
+  
+}
+.profile img{
+  height: 250px;
+  width: 250px;
+}
+.info p{
+  color: #A3A3A3;
+  font-size: 1.2vw;
+}
+.info button{
+  height: 40px;
+  width: 120px;
+  margin-top: 10px;
+  font-size: 1.1vw;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  border: 1px solid white;
+  
+}
+.con2{
+  padding: 2vw 3vw;
+  text-transform: uppercase;
+  line-height: 1.8vw;
+}
+.con2 h5{
+  font-size: 1vw;
+  color: #A3A3A3;
+}
+.con2 a{
+  color: white;
+  font-size: 1.1vw;
+  text-decoration: none;
+  
+
+}
+.con3{
+
+  padding: 15vw 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+  
+}
+.con3 .timer{
+display: flex;
+  gap: 20px;
+  color: white;
+}
+.navbar a{
+  text-decoration: none;
+  color: white;
+  font-size: 1vw;
+  text-transform: uppercase;
+}
+.con3 .navbar{
+  display: flex;
+  gap: 70px;
+
+}
+
+
+
+
